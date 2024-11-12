@@ -1,0 +1,63 @@
+<!-- dialog_self_note.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/close_box"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/round_clear_24" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="View/Edit Self Note"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:hint="Enter your note"
+        android:inputType="textMultiLine|textCapSentences"
+        android:maxLines="5"
+        android:padding="10dp"
+        android:enabled="false"
+        android:background="@drawable/edittext_background"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/buttonEditNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:backgroundTint="#E91E63"
+            android:layout_marginHorizontal="5dp"
+            android:text="Edit" />
+
+        <Button
+            android:id="@+id/buttonSaveNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:backgroundTint="#4CAF50"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</LinearLayout>
